@@ -22,9 +22,9 @@ sidebar:
 
 post:
   created: Post created
-  modified: Post modified
+  modified: updated
   sticky: Sticky
-  posted: Posted on
+  posted: ' '
   in: In
   read_more: Read more
   untitled: Untitled
