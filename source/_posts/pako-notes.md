@@ -6,6 +6,7 @@ tags:
  - array _get (should be unsafe)
  - rshift might be unnecessary
  - int32 in crc32 and adler (and related vars) maybe necessary (find minimum number of changes)
+ <!-- more -->
  - search for "signed" in zlib.inflate (should be ok to use "+" instead of "|")
  - minimize "_hx_local*" and "index*" (py)
  - avoid pre/post inc/dec
