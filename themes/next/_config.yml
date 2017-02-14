@@ -2,6 +2,9 @@
 # Site Information Settings
 # ---------------------------------------------------------------
 
+subtitle: vaneggiamenti
+description: desc
+
 # Put your favicon.ico into `hexo-site/source/` directory.
 favicon: /favicon.ico
 

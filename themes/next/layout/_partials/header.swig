@@ -16,9 +16,9 @@
     </a>
   </div>
     {% if theme.seo %}
-      <h1 class="site-subtitle" itemprop="description">{{ config.subtitle }}</h1>
+      <h1 class="site-subtitle" itemprop="description">{{ theme.subtitle }}</h1>
     {% else %}
-      <p class="site-subtitle">{{ config.subtitle }}</p>
+      <p class="site-subtitle">{{ theme.subtitle }}</p>
     {% endif %}
 </div>
 
