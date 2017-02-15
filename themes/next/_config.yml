@@ -96,27 +96,27 @@ font:
   global:
     # external: true will load this font family from host.
     external: true
-    family: Lato
+    family: Roboto
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
+    family: Roboto Slab
 
   # Font settings for posts
   # Fallback to `global` font settings.
   posts:
     external: true
-    family:
+    family: Roboto
 
   # Font settings for Logo
   # Fallback to `global` font settings.
   # The `size` option use `px` as unit
   logo:
     external: true
-    family:
-    size:
+    family: Lobster
+    size: 28px
 
   # Font settings for <code> and code blocks.
   codes:
