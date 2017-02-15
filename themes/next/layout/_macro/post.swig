@@ -61,6 +61,7 @@
 
         <div class="post-meta">
           <span class="post-time">
+			{% set post_actually_updated = date(post.date) != date(post.updated) %}
             {% if theme.post_meta.created_at %}
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -69,15 +70,15 @@
                 <span class="post-meta-item-text">{{ __('post.posted') }}</span>
               {% endif %}
               <time title="{{ __('post.created') }}" itemprop="dateCreated datePublished" datetime="{{ moment(post.date).format() }}">
-                {{ date(post.date, config.date_format) }}
+                {{ date(post.date, config.date_format) }} 
               </time>
             {% endif %}
-
-            {% if theme.post_meta.created_at and theme.post_meta.updated_at %}
+			
+            {% if theme.post_meta.created_at and theme.post_meta.updated_at and post_actually_updated %}
               <span class="post-meta-divider">|</span>
             {% endif %}
 
-            {% if theme.post_meta.updated_at %}
+            {% if theme.post_meta.updated_at and post_actually_updated %}
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-check-o"></i>
               </span>
