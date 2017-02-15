@@ -2,7 +2,7 @@
 # Site Information Settings
 # ---------------------------------------------------------------
 
-subtitle: vaneggiamenti
+subtitle: ramblings
 description: desc
 
 # Put your favicon.ico into `hexo-site/source/` directory.
@@ -440,7 +440,7 @@ algolia_search:
 #! ---------------------------------------------------------------
 
 # Motion
-use_motion: true
+use_motion: false
 
 # Fancybox
 fancybox: true
