@@ -56,12 +56,12 @@ menu:
 menu_icons:
   enable: true
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
-  home: home
+  home: dot-circle-o
   about: user
   categories: th
   schedule: calendar
   tags: tags
-  archives: archive
+  archives: list
   sitemap: sitemap
   commonweal: heartbeat
 
