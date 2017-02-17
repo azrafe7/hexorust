@@ -1,8 +1,21 @@
 .tag-cloud {
   text-align: center;
 
+}
+
+.tag-cloud, .post-tags {
   a {
+	color: $gray-lighter;
     display: inline-block;
     margin: 10px;
+	border: 1px solid !important;
+	border-radius: 5px;
+	line-height: 1.5;
+	padding: 0px 5px;
+	transition: color 0.25s ease-in-out;
+  }
+  
+  a:hover {
+	color: $black-dim !important;
   }
 }
