@@ -96,19 +96,19 @@ font:
   global:
     # external: true will load this font family from host.
     external: true
-    family: Roboto
+    family: Titillium Web
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
   headings:
     external: true
-    family: Roboto Slab
+    family: Sansita
 
   # Font settings for posts
   # Fallback to `global` font settings.
   posts:
     external: true
-    family: Roboto
+    family: Titillium Web
 
   # Font settings for Logo
   # Fallback to `global` font settings.
