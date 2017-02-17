@@ -6,4 +6,4 @@
   {{ tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color: '#ccc', end_color: '#111'}) }}
 </div>
 </div>
-{{ list_posts() }}
+{{ list_posts({amount:3, transform:truncate}) }}
