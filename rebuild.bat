@@ -1,13 +1,13 @@
 @echo off
-echo Clean
+echo Clean...
 call hexo clean
 echo.
-echo Generate
+echo Generate...
 if [%1] NEQ [serve] (
   call hexo generate %*
 ) else (
   call hexo generate %*
   echo.
-  echo Serve
+  echo Serve...
   call hexo serve
 )
