@@ -1,5 +1,6 @@
 ---
 title: Hello World
+sticky: 20
 tags:
  - init
  - not

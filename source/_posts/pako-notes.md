@@ -2,7 +2,7 @@
 title: pako_notes
 date: 2017-01-11 23:45:31
 description: desc
-sticky: true
+sticky: 1
 tags:
 ---
 Thing to look for trying to optimize it...
