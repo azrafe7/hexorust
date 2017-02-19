@@ -43,7 +43,7 @@
                 <i class="fa fa-external-link"></i>
               </a>
             {% else %}
-              {% if is_index %}
+              {% if is_index or is_post() %}
                 {% if post.sticky > 0 %}
                   <span class="post-sticky-flag" title="{{ __('post.sticky') }}">
                     <i class="fa fa-thumb-tack"></i>
