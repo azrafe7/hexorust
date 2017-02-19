@@ -41,7 +41,7 @@ The higher the value, the higher the importance of the related post (and therefo
 
 As an example I've given this post a sticky value of `15`, which sould put it between `hello-world` and `pako_notes`.
 
-One downside is that I've yet to find a way to make this same approach while using `{{ list_posts }}`, but that's for another time.
+One downside is that I've yet to find a way to make this same approach work while using `{% raw %}{{ list_posts() }}{% endraw %}`, but that's for another time.
 
 
 TODO: post refs
