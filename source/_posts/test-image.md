@@ -6,3 +6,4 @@ tags:
  - init
 ---
 ![image](/uploads/snapshot.png)
+{% fullimage /uploads/snapshot.png, alt, title %}
