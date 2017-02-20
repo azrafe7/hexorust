@@ -7,3 +7,4 @@ tags:
 ---
 ![image](/uploads/snapshot.png)
 {% fullimage /uploads/snapshot.png, alt, title %}
+{% soundcloud https://soundcloud.com/navmusic/some-way-1 visual %}
