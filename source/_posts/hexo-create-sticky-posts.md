@@ -44,4 +44,23 @@ As an example I've given this post a sticky value of `15`, which sould put it be
 One downside is that I've yet to find a way to make this same approach work while using `{% raw %}{{ list_posts() }}{% endraw %}`, but that's for another time.
 
 
-TODO: post refs
+**UPDATE**:
+
+I've managed to make `list_posts()` work by making a few modifications.
+ 
+In `\node_modules\hexo-generator-index\lib\generator.js`, after [posts.sort(...)](https://github.com/hexojs/hexo-generator-index/blob/e18483358079b7ad4a7ad608caedaff94e3327ca/lib/generator.js#L7), add:
+
+{% codeblock added lines lang:js https://github.com/hexojs/hexo-generator-index/blob/e18483358079b7ad4a7ad608caedaff94e3327ca/lib/generator.js#L7 generator.js on github %}
+  posts.each(function(post, i) { 
+    post.custom_idx = i;
+  });
+{% endcodeblock %}
+
+This defines a `custom_idx` var for each post that reflects the order in which the posts are sorted.
+
+
+And then in your view (f.e. `\themes\next\layout\_custom\sidebar.swig`) you can use something like:
+
+```js
+{{ list_posts({amount:15, transform:truncate, orderby:'custom_idx', order:1}) }}
+```

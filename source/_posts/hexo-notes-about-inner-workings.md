@@ -16,7 +16,6 @@ Debugging my attempts with `node debug node_modules\hexo\bin\hexo g` I set up to
 Well a `post` object is something like this:
 
 ```
-{% raw %}
 > console.dir(post, {depth:0})
 < Document {
 <   title: 'New Post',
@@ -48,13 +47,11 @@ n---\n',
 <   __post: true,
 <   lang: 'en',
 <   canonical_path: '2017/01/10/New-Post-0/index.html' }
-{% endraw %}
 ```
 
 This, instead, is what `posts` looks like:
 
 ```
-{% raw %}
 > console.dir(post, {depth:1})
 < Document {
 <   title: 'New Post',
@@ -252,26 +249,5 @@ s:\n - another tag\n - not\n - why not\n---\n',
 <   __post: true,
 <   lang: 'en',
 <   canonical_path: '2017/01/10/New-Post-0/index.html' }
-{% endraw %}
 ```
 
-**UPDATE**:
-
-`list_posts()` can be used adding these lines:
- 
-In `\node_modules\hexo-generator-index\lib\generator.js`:
-
-```raw
-{% raw %}
-  posts.each(function(post, i) { 
-    post.custom_idx = i;
-  });
-{% endraw %}
-
-
-And then in `\themes\next\layout\_custom\sidebar.swig`:
-
-{% raw %}
-  {{ list_posts({amount:15, transform:truncate, orderby:'custom_idx', order:1}) }}
-{% endraw %}
-```
