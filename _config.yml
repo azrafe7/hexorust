@@ -71,6 +71,12 @@ deploy:
   type:
 
 # Index generator (works for the main index page vs archives page)
-index_generator:
+#index_generator:
+#  per_page: 4
+#  order_by: -sticky -date
+  
+# Custom index generator (works for the main index page vs archives page)
+custom_index_generator:
   per_page: 4
   order_by: -sticky -date
+  
