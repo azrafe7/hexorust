@@ -1,0 +1,19 @@
+
+$highlight-link = $blue-sky
+
+.highlight {
+  figcaption {
+    margin: .75em;
+    color: lighten($highlight-foreground, 25%);
+    
+    a {
+      color: lighten($highlight-link, 25%);
+      border-bottom-color: lighten($highlight-link, 25%);
+
+      &:hover { 
+        color: $highlight-link;
+        border-bottom-color: $highlight-link; 
+      }
+    }
+  }
+}
