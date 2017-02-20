@@ -137,3 +137,7 @@ custom index generator
 INFO  Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.
 custom index generator
 ```
+
+**NOTE**:
+
+it seems that although this works fine locally, it's still needed to remove the `hexo-index-generator` dependency in `package.json` to make netlify happy (still not sure why :))
