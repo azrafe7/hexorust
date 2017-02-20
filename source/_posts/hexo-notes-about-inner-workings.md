@@ -254,3 +254,24 @@ s:\n - another tag\n - not\n - why not\n---\n',
 <   canonical_path: '2017/01/10/New-Post-0/index.html' }
 {% endraw %}
 ```
+
+**UPDATE**:
+
+`list_posts()` can be used adding these lines:
+ 
+In `\node_modules\hexo-generator-index\lib\generator.js`:
+
+```raw
+{% raw %}
+  posts.each(function(post, i) { 
+    post.custom_idx = i;
+  });
+{% endraw %}
+
+
+And then in `\themes\next\layout\_custom\sidebar.swig`:
+
+{% raw %}
+  {{ list_posts({amount:15, transform:truncate, orderby:'custom_idx', order:1}) }}
+{% endraw %}
+```
