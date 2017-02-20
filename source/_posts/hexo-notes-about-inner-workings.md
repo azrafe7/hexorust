@@ -1,6 +1,6 @@
 ---
 title: 'hexo: notes about inner workings'
-sticky: false
+sticky: 200
 date: 2017-02-20 00:28:22
 tags:
  - hexo
