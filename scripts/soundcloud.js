@@ -21,7 +21,6 @@ var assign = require('object-assign');
  *   {% soundcloud https://soundcloud.com/only-the-beat/3lau-electric-daisy-carnival-edc-new-york-2014 %}
  */
 hexo.extend.tag.register("soundcloud", function(args) {
-    console.log(assign);
     var options, songUrl, soundcloudUrl, type;
     songUrl = args[0];
     type = args[1] || "default";
