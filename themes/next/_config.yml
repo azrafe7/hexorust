@@ -139,6 +139,7 @@ social:
   #LinkLabel: Link
   GitHub: https://github.com/azrafe7
   #Mail: mailto:azrafe7[at]gmail[dot]com
+  GitHub Repo: https://github.com/azrafe7/hexorust
 
 
 # Social Links Icons
@@ -154,6 +155,7 @@ social_icons:
   Mail: envelope
   #Twitter: twitter
   #Weibo: weibo
+  #GitHub Repo: github-alt
 
 
 # Sidebar Avatar
