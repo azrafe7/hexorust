@@ -50,7 +50,7 @@ class Point {
     this.y = y;
   }
   
-  static public function multiply(p:Point, scalar:Float):Point {
+  static public function xMultiply(p:Point, scalar:Float):Point {
     var self:Point = p;
     self.x *= scalar;
     self.y *= scalar;
@@ -77,7 +77,7 @@ class Point {
     this.y *= scalar;
   }
   
-  static public function multiply(p:Point, scalar:Float):Point {
+  static public function xMultiply(p:Point, scalar:Float):Point {
     var self:Point = p;
     self.multiply(scalar);
     return self;
